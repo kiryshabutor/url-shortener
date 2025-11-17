@@ -14,6 +14,10 @@ import (
 	"github.com/go-chi/render"
 )
 
+//go:generate mockery --dir=internal/http-server/handlers/redirect/redirect.go --name=URLGeter --output=internal/http-server/handlers/redirect/mocks --outpkg=mocks
+
+
+
 type URLGeter interface {
 	GetURL(alias string) (string, error)
 }
