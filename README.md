@@ -28,20 +28,6 @@
 - Go 1.24.5 или выше
 - SQLite3
 
-### Клонирование и сборка
-
-```bash
-# Клонируйте репозиторий
-git clone <repository-url>
-cd url-shortener
-
-# Установите зависимости
-go mod download
-
-# Соберите проект
-go build -o url-shortener ./cmd/url-shortener
-```
-
 ## Конфигурация
 
 Создайте файл конфигурации (например, `config/local.yaml`):
